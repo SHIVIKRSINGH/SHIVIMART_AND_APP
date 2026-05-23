@@ -1,0 +1,17 @@
+workflows:
+  ios-release:
+    name: iOS Release
+
+    environment:
+      flutter: stable
+      xcode: latest
+
+    integrations:
+      app_store_connect: Codemagic
+
+    scripts:
+      - flutter pub get
+      - flutter build ipa --release
+
+    artifacts:
+      - build/ios/ipa/*.ipa
