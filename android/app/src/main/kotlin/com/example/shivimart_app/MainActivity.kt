@@ -1,4 +1,4 @@
-package com.example.shivimart_app
+package com.softgensys.shivimart
 
 import io.flutter.embedding.android.FlutterActivity
 
