@@ -18,7 +18,6 @@ FileInputStream(keystorePropertiesFile)
 
 android {
 
-```
 namespace = "com.softgensys.shivimart"
 
 compileSdk = flutter.compileSdkVersion
@@ -76,16 +75,18 @@ buildTypes {
 
         signingConfig =
             signingConfigs.getByName("release")
+
+        isMinifyEnabled = false
+
+        isShrinkResources = false
     }
 }
-```
+
 
 }
 
 flutter {
 
-```
 source = "../.."
-```
 
 }
